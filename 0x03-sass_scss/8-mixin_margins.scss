@@ -1,0 +1,11 @@
+/* My style */
+@mixin margin($px) {
+	margin-left: $px;
+	margin-right: $px;
+}
+body {
+	@include margin(10px);
+}
+div {
+	@include margin(15px);
+}
