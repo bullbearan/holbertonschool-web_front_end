@@ -1,0 +1,59 @@
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  top: 20px;
+  display: flex;
+  align-items: center;
+}
+.box {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box1 {
+  font-size: 20px;
+  background-color: hsl(144,66%,49%);
+  width: 100px;
+  height: 70px;
+  align-self: end;
+  position: relative;
+  bottom: 20px;
+}
+.box2 {
+  font-size: 40px;
+  background-color: hsl(206,69%,54%);
+  width: 135px;
+  height: 92px;
+  align-self: end;
+  position: relative;
+  bottom: 15px;
+}
+.box3 {
+  font-size: 100px;
+  background-color: hsl(211, 31%, 29%);
+  width: 280px;
+  height: 152px;
+}
+.box4 {
+  font-size: 40px;
+  background-color: hsl(284,38%,52%);
+  width: 135px;
+  height: 92px;
+  align-self: end;
+  position: relative;
+  bottom: 15px;
+}
+.box5 {
+  font-size: 20px;
+  background-color: hsl(31,98%,48%);
+  width: 100px;
+  height: 70px;
+  align-self: end;
+  position: relative;
+  bottom: 20px;
+}
