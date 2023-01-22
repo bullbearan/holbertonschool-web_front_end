@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+		<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+
+    </head>
+
+    <body>
+	<script type="application/javascript">
+		$( document ).ready(function() {
+			function createFamilyTree() {
+				$("body").append("<table></table>");
+				$("table").append("<thead></thead>", "<tbody></tbody>");
+				const row = $("<tr></tr>").append($("<th></th>").text("Firstname"), $("<th></th>").text("Lastname"));
+				$("thead").append(row);
+			}
+			createFamilyTree();
+			function addNewMember(firstName, lastName) {
+				const row = $("<tr></tr>");
+				const x = $("<td>(x)</td>");
+				x.css("background-color", "orange");
+				x.click(function () {
+					$(row).remove();
+				});
+				row.append(`<td>${firstName}</td>`, `<td>${lastName}</td>`, x);
+				$("tbody").append(row);
+			}
+			const fullname = {
+				"Guillaume": "Salva",
+				"Arielle": "Snizt",
+				"Fanette": "Snizt",
+				"Gerard": "Snizt",
+				"Victor": "Salva",
+			}
+			for (const firstname in fullname) {
+				addNewMember(firstname, fullname[firstname]);
+			}
+		});
+	</script>
+    </body>
+
+</html>
